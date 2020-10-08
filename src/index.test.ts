@@ -28,8 +28,7 @@ test("not", () => {
     const res1 = AtoZ.not(Bool).parse("false")
     const expect1 : typeof res1 = {
         result:"failure",
-        cause:"false",
-        messages:["TODO:"]
+        message:"TODO:"
     }
     expect(res1).toEqual(expect1)
     const res2 = AtoZ.not(Bool).parse("notfalse")

@@ -37,8 +37,7 @@ describe("atoms", () => {
         const result = TaggedElement.parse("<a>hello</b>")
         const expected : typeof result = {
             result:"failure",
-            messages:["Validation Error"],
-            cause:"<a>hello</b>"
+            message:"Validation Error"
         }
         expect(result).toEqual(expected)
     })
